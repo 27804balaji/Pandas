@@ -1,6 +1,6 @@
 import pandas as p
 
-'''
+
 stock = p.DataFrame({
     'Ticker':['Google','WMT','MSFT','RIL','TATA'],
     'EPS':[27.82,4.61,-1,'n.a.',5.60],
@@ -22,9 +22,9 @@ whether = p.DataFrame({
 with p.ExcelWriter('Stock_Whether.xlsx') as writer:
     stock.to_excel(writer,sheet_name='Stocks',index=False)
     whether.to_excel(writer,sheet_name='Whether',index=False)
-'''
+
 #to find the Missing datas...
-'''
+
 
 event = p.read_csv(r'C:\Users\abc\Desktop\Exel\missing_whether_book1.csv',parse_dates=['Date'])
 event.set_index('Date',inplace=True) #inplace is Mandatory
@@ -45,5 +45,5 @@ new_event = event.interpolate()# interpolate gives some sligt deviated datas...
 new_event1 = event.dropna(how='all')# It willl drop all the rows and columns which has na values...
 print(new_event)
 print(new_event1)
-'''
+
 

@@ -1,6 +1,5 @@
 import pandas as p
 
-
 data = p.read_csv(r'C:\Users\abc\Desktop\Exel\HistoricalData.csv' , parse_dates=['Date'],index_col='Date')#parse_dates: Convert Columns into Datetime When Using pandas to Read CSV Files.
 
                                                                 #DateTime Indexing...   

@@ -1,6 +1,6 @@
 import pandas as p
 import numpy as n
-                                                                  #to_date Function()
+                                                                  #to_datetime Function()
 
 data = ['2023/12/1','2023.12.1','20231201' ,'dec 1,2023', '2023-12-1','1/12/2023','balaji'] # As we pass string namely 'balaji', it will commit an error...
 print(p.to_datetime(data ,errors='ignore')) #'ignore' is used to ignore the above error...

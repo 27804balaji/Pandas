@@ -8,7 +8,7 @@ data.head(5)
 
 # To declare the timezone
 data = data.tz_localize(tz= 'America/New_York')
-print(data.index)
+print(data)
 
 #To convert the time zone into belrin timezone...
 data = data.tz_convert(tz='Europe/Berlin')
